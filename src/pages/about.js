@@ -3,9 +3,9 @@ import { graphql } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import Layout from "../components/layout"
-import Picker from "../components/color-picker"
+// import Picker from "../components/color-picker"
 
-const DragonDesigner = ({ data: { about } }) => (
+const About = ({ data: { about } }) => (
   <Layout>
     <article className="sheet">
       <HelmetDatoCms seo={about.seoMetaTags} />
@@ -61,7 +61,7 @@ const DragonDesigner = ({ data: { about } }) => (
   </Layout>
 )
 
-export default DragonDesigner
+export default About
 
 export const query = graphql`
   query AboutQuery {
