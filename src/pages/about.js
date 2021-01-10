@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import Layout from "../components/layout"
+// import Picker from "../components/color-picker"
 
 const About = ({ data: { about } }) => (
   <Layout>
@@ -14,12 +15,7 @@ const About = ({ data: { about } }) => (
         <div className="sheet__gallery">
           <Img fluid={about.photo.fluid} />
         </div>
-        <div
-          className="sheet__body"
-          dangerouslySetInnerHTML={{
-            __html: about.bioNode.childMarkdownRemark.html,
-          }}
-        />
+
       </div>
     </article>
   </Layout>
