@@ -52,27 +52,6 @@ const DragonDesigner = ({ data: { about } }) => (
           <img class="couch__img"
               fluid={about.photo.fluid} alt="Dragon!">
         </div>
-
-        <div class="colours">
-          <div class="colours__labels">
-            <span>Main Color</span>
-            <span>Belly</span>
-            <span>Wings</span>
-            <span>Toes</span>
-            <span>Crest</span>
-            <span></span>
-
-          </div>
-          <div class="colours__inputs">
-            <input id="js-color-1" class="jscolor {onFineChange:'Picker.updateMain(this)'}" value="444F96">
-            <input id="js-color-2" class="jscolor {onFineChange:'Picker.updateBelly(this)'}" value="83C9D4">
-            <input id="js-color-3" class="jscolor {onFineChange:'Picker.updateWings(this)'}" value="FFFFFF">
-            <input id="js-color-4" class="jscolor {onFineChange:'Picker.updateToes(this)'}" value="E3BEA6">
-            <input id="js-color-5" class="jscolor {onFineChange:'Picker.updateCrest(this)'}" value="FFFFFF">
-            <button class="gen-random" onclick="Picker.generateRandom()">Generate random</button>
-          </div>
-        </div>
-
         <div className="sheet__gallery">
           <Img fluid={about.photo.fluid} />
         </div>
